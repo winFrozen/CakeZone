@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h2>Bu kursni biz yangilaymiz</h2>
+<form method="post"> {% csrf_token %}
+    {{form.as_p }}
+    <button type="submit" class="btn btn-danger">Tahrirlash</button>
+
+</form>
+
+{% endblock content %}

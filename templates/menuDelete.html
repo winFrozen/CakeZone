@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h2>Bu kursni o'chirib tashlaymiz</h2>
+<form method="post">{% csrf_token %}
+    <p>{{menu.name}} sarlavhali yangilikni o'chirishni hohlaysizmi ?</p>
+    <button> type="submit" class="btn btn_danger ml-2">Tasdiqlayman</button>
+
+</form>
+
+{% endblock content %}

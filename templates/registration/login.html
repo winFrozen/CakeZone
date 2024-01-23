@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!--<h1>Login Page</h1>-->
+<h1 class="computers_taital">Login Page</h1>
+
+<p>Plesae, Shu formani to'ldiring</p>
+<form method="post"> {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+    <button class="btn btn-primary w-100 py-3" type="submit">Login</button>
+
+</form>
+
+{% endblock content %}
